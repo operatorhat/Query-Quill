@@ -1,4 +1,7 @@
-cat > README.md <<'EOF'
+
+=======
+# Query-Quill
+=======
 # Query Quill (SQL Query Buddy)
 
 Natural language → safe, schema‑aware SQL + concise explanation. Focus: a dependable baseline by 2025‑09‑06 (contest submission).
@@ -99,3 +102,10 @@ MIT (tentative)
 
 ## Attribution
 DuckDB • SQLGlot • LangChain • Chroma • Related research: PICARD, RAT-SQL (conceptual)
+=======
+---
+## 🙌 Attribution
+- LangChain & Chroma community
+- SQLGlot project
+- DuckDB team
+- Research inspiration: PICARD, RAT-SQL (reference only)
