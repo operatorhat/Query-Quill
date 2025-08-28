@@ -421,7 +421,7 @@ MIT (tentative)
 MVP Build In Progress — see CHANGELOG.md for iteration notes.
 
 ---
-## 📝 Immediate TODO (Live Checklist)
+## 📝 Immediate TODO 
 - [ ] generate_schema.py
 - [ ] schema.json produced
 - [ ] embeddings + vector_store pipeline
