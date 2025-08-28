@@ -20,7 +20,7 @@ This file tracks weighted completion toward the baseline deliverable.
 ### Category Detail (Subtasks)
 
 **A. Foundation & Repo Hygiene (8%)**
-- [ ] A1 README purpose + quickstart
+- [X] A1 README purpose + quickstart
 - [ ] A2 Project goals & scope boundaries section
 - [ ] A3 Repository structure explanation
 - [ ] A4 Debt/risks noted (optional)
