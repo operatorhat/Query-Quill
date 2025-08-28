@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Query-Quill
 =======
 # Query Quill (SQL Query Buddy)
