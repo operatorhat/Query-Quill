@@ -11,7 +11,7 @@ Status: MVP baseline in progress (Day -9)
 ## Problem → Outcome
 Analysts lose time mapping intent to correct tables, fixing syntax, and explaining results. Query Quill compresses that loop: NL question → validated SQL → execution → explanation + basic quality heuristics in one call.
 
-## Baseline Scope (IN by Sept 6)
+## Baseline Scope 
 - NL → SQL over synthetic ecommerce schema (customers, orders, order_items, products, payments)
 - Table-level retrieval (embedding similarity) with confidence score
 - Guardrails: block destructive verbs, force LIMIT when absent & large, parse + simple repair loop (SQLGlot)
@@ -51,10 +51,10 @@ Multi-turn conversation, advanced EXPLAIN-driven optimization, multi-DB adapters
 - [ ] Metrics logging
 - [ ] Evaluation harness
 
-## Architecture (Baseline Flow)
+## Architecture 
 User Question → Retrieve candidate tables (embeddings) → Assemble prompt → LLM SQL draft → Parse & Guardrails → (Repair if needed) → Execute (DuckDB) → Explanation + hints → JSON response + metrics log.
 
-## Usage (Endpoint Sketch)
+## Usage 
 POST /query
 Request:
 {
@@ -82,7 +82,7 @@ Output: pass_count / total + list of failures (retrieval miss | parse fail | exe
 - No auth or rate limiting
 - Single local model path (Ollama) primary; OpenAI fallback optional
 
-## Roadmap (Locked to Baseline)
+## Roadmap 
 1. Schema + synthetic data
 2. Retrieval + confidence
 3. NL → SQL + guardrails + repair
@@ -92,7 +92,7 @@ Output: pass_count / total + list of failures (retrieval miss | parse fail | exe
 
 (Future phases moved to FUTURE.md)
 
-## Design Principles (Trimmed)
+## Design Principles 
 - Vertical slice first, refine later
 - Measurable iteration (eval harness governs changes)
 - Safety > feature breadth
